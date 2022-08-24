@@ -18,4 +18,4 @@ Ele recebe informações sobre o estado atual do cluster e faz alterações para
 
 - **etcd:** Este componente é responsável por salvar o estado e as configurações do cluster kubernetes em formato de chave e valor.
 
-<img src="https://github.com/kadeguilherme/k8s-basico/blob/main/images/k8s-arquitetura-master.svg" width="800px;"/>
+<img src="https://github.com/kadeguilherme/k8s-basico/blob/main/images/k8s-arquitetura-master.svg" width="70%" height="70%">
