@@ -18,4 +18,16 @@ Ele recebe informações sobre o estado atual do cluster e faz alterações para
 
 - **etcd:** Este componente é responsável por salvar o estado e as configurações do cluster kubernetes em formato de chave e valor.
 
-<img src="https://github.com/kadeguilherme/k8s-basico/blob/main/images/k8s-arquitetura-master.svg" width="70%" height="70%">
+
+<img src="https://github.com/kadeguilherme/k8s-basico/blob/main/images/k8s-arquitetura-master.png" >
+
+## Componentes do Node
+Abaixo estão os principais componentes encontrado em um node(Worker).
+
+- **pods:** Em resumo o pod é um encapsulamento dos contêineres.
+- **kubelet:** Cada node contém um kubelet, que é o responsável pela comunicação com kube-controller-manager.
+- **kube-proxy:** É o responsável em pela rede dos nós. É ele que permitem a comunicação de rede com seus pods.
+
+
+Vou deixar um link de um artigo que trás mais detalhes de todos componentes do Master e Node.
+[Artigo](https://vertigo.com.br/kubernetes-6-principais-componentes-da-sua-arquitetura/)
