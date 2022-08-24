@@ -17,3 +17,5 @@ Master node é composto pelo seguinte componentes:
 Ele recebe informações sobre o estado atual do cluster e faz alterações para direcionar o status do cluster para o estado desejado. Kube-controller-manager é responsável pelo controle de replicas.
 
 - **etcd:** Este componente é responsável por salvar o estado e as configurações do cluster kubernetes em formato de chave e valor.
+
+<img src="https://github.com/kadeguilherme/k8s-basico/blob/main/images/k8s-arquitetura-master.svg" width="800px;"/>
