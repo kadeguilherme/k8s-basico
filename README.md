@@ -31,3 +31,5 @@ Abaixo estão os principais componentes encontrado em um node(Worker).
 
 Vou deixar um link de um artigo que trás mais detalhes de todos componentes do Master e Node.
 [Artigo](https://vertigo.com.br/kubernetes-6-principais-componentes-da-sua-arquitetura/)
+
+<img src="https://github.com/kadeguilherme/k8s-basico/blob/main/images/architecture-nodes.svg">
