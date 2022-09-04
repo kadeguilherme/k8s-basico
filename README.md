@@ -33,3 +33,10 @@ Vou deixar um link de um artigo que trás mais detalhes de todos componentes do 
 [Artigo](https://vertigo.com.br/kubernetes-6-principais-componentes-da-sua-arquitetura/)
 
 <img src="https://github.com/kadeguilherme/k8s-basico/blob/main/images/architecture-nodes.svg">
+
+# Workload
+Workloas são objetos que defenir regras para os pods. Por exempleo voce tem 3 pods rodando uma aplicação na versão stable, e com isso a versão será atualizada para lastet,sem a utilização do Deployments, que é um tipo de Worload, para ocorrer essa atualização necessita à destruição dos pods e a criação com a nova versão feita de forma manual. No entanto, para torna a nossa vida consderavelmente mais fácil, você não precisa gerenciar cada Pod. Em vez disso podemos utilizar o Deployment para gerenciar nossos pods.
+O kubernetes fornece vários recursos de workload intregados:
+- ReplicaSet
+- Deployment
+
