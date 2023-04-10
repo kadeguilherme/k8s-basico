@@ -7,7 +7,7 @@ O cluster kubernetes tem 2 componentes principais:
 - **Worker nodes**
 
 ## Master node ou Control plane
-O master node é o centro nervoso de cada cluster do kubernetes. Ele é responsável para que o cluster do kubernetes atinja um estado desajado defino pelo usuário. O master node interage com nodes usando o kubelet.<br> 
+O master node é o centro nervoso de cada cluster do kubernetes. Ele é responsável para que o cluster do kubernetes atinja um estado desajado definido pelo usuário. O master node interage com nodes usando o kubelet.<br> 
 Master node é composto pelo seguinte componentes:
 - **kube-apiserver:** Fornece uma API que serve como front-end de um control plane do kubernetes. As solicitações externas e internas é de sua responsábilidade de determinar se a solicitação é válida  e processa-la. O kubectl command-line interface(CLI) ou outra ferramenta como kubeadm batem ma API do kube-apiserver. Resumindo kube-apiserver é o responvável por estabelecer a comunicação entre o usuário, elemento exeterno e componentes de cluster, como pods, ConfigMaps, events e namespaces.
 
@@ -34,9 +34,21 @@ Vou deixar um link de um artigo que trás mais detalhes de todos componentes do 
 
 <img src="https://github.com/kadeguilherme/k8s-basico/blob/main/images/architecture-nodes.svg">
 
+# Objetos
+Objetos k8s descrevem o estado do seu cluster e são representado por arquivos JSON ou YAML.
+Por exemplo, ao criar um objeto Deployment, o k8s garante que numero especificado de replicas esteja sempre em execução mesmo se o cluster for renicializado.
+
+Existe duas categoria de objetos do kubernetes:
+- basic-object
+- high-level objects
+
 # Workload
 Workloas são objetos que defenir regras para os pods. Por exempleo voce tem 3 pods rodando uma aplicação na versão stable, e com isso a versão será atualizada para lastet,sem a utilização do Deployments, que é um tipo de Worload, para ocorrer essa atualização necessita à destruição dos pods e a criação com a nova versão feita de forma manual. No entanto, para torna a nossa vida consderavelmente mais fácil, você não precisa gerenciar cada Pod. Em vez disso podemos utilizar o Deployment para gerenciar nossos pods.
 O kubernetes fornece vários recursos de workload intregados:
 - ReplicaSet
 - Deployment
-
+- StatefulSet
+- DaemonSet
+- Job
+- CronJob
+- Namespace
